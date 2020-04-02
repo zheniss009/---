@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://kak-zarabotat-dengi.com/target_milion/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <link rel="stylesheet" type="text/css" href="./index_files/lightbox.css">
+
+  <script type="text/javascript" async="" src="./index_files/client.js"></script><script language="Javascript" type="text/javascript" src="./index_files/jquery-1.4.1.js"></script>
+  <script language="Javascript" type="text/javascript" src="./index_files/jquery.lwtCountdown-0.9.5.js"></script>
+  <meta name="author" content="alex">
+  <title>Клиенты за 24 часа</title>
+
+
+  <style>
+#countdown_dashboard {
+height: 110px;
+}
+.dash {
+width: 110px;
+height: 114px;
+background: transparent url('images/dash.png') 0 0 no-repeat;
+float: left;
+margin-left: 20px;
+position: relative;
+}
+.dash .digit {
+font-size: 55pt;
+font-weight: bold;
+float: left;
+width: 55px;
+text-align: center;
+font-family: Times;
+color: #555555;
+position: relative;
+}
+.dash_title {
+position: absolute;
+display: block;
+bottom: 0px;
+right: 6px;
+font-size: 9pt;
+color: #555;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.dev_comment {
+font-size: 14pt;
+color: #777;
+text-align: center;
+font-style: italic;
+margin: 40px 10px;
+}
+body {
+background-color: #EEEEEE;
+background-image: url('files/fon20000.jpg');
+font-family: Arial, Tahoma, sans-serif;
+margin:0;
+padding-top:20px;
+}
+#main {
+font-family: Arial, Tahoma, sans-serif;
+color: #000;
+font-size: 32px;
+background-color: rgb(255, 255, 255);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 16px;
+-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 720px;
+padding: 60px;
+padding-top: 15px;
+border: 0px solid #ccc;
+border-top: none;
+margin-top: 0;
+}
+#mainotziv {
+font-family: Arial, Tahoma, sans-serif;
+color: #000;
+font-size: 15px;
+background-color: rgb(255, 255, 255);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 12px;
+-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 560px;
+padding: 20px;
+padding-top: 10px;
+border: 0px solid #ccc;
+border-top: none;
+margin-top:0; }
+#mainkarta {
+font-family: Arial, Tahoma, sans-serif;
+color: #000;
+font-size: 15px;
+background-color: rgb(255, 255, 255);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 12px;
+-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 400px;
+padding: 20px;
+padding-top: 10px;
+border: 0px solid #ccc;
+border-top: none;
+margin-top:0; }
+#mainbonus {
+font-family: Arial, Tahoma, sans-serif;
+color: #000;
+font-size: 15px;
+background-color: rgb(255, 255, 255);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+margin-left: -10px;
+margin-right: auto;
+position: relative;
+width: 700px;
+padding: 20px;
+padding-top: 10px;
+border: 0px solid #ccc;
+border-top: none;
+margin-top:0; }
+#mainbonus7 {
+font-family: Arial, Tahoma, sans-serif;
+color: #000;
+font-size: 15px;
+background-color: rgb(255, 255, 255);
+margin-left: -9px;
+margin-right: auto;
+position: relative;
+width: 400px;
+padding: 0px;
+padding-top: 10px;
+border: 0px solid #ccc;
+border-top: none;
+margin-top:0; }
+h1 {
+color: #cc0000;
+font-size: 30px;
+text-align: center;
+}
+h2 {
+color: #cc0000;
+font-size: 25px;
+margin: 20px;
+text-align: center;
+}
+h4 {
+color: #000000;
+font-size: 20px;
+margin: 20px;
+text-align: left;
+}
+#help { float: left;
+}
+#ben p {
+padding:0 0 0 70px;
+background-image:url('img/minibenplus.png'); background-repeat:no-repeat; background-position: 20px center;
+line-height:2.0;
+width: 640px;
+}
+#aben p {
+padding:0 0 0 70px;
+background-image:url('files/plus0000.png'); background-repeat:no-repeat; background-position: 30px center;
+line-height:2.2;
+width: 640px;
+}
+#bben p {
+padding:0 0 0 70px;
+background-image:url('img/minibengalka.png'); background-repeat:no-repeat; background-position: 30px center;
+line-height:1.8;
+width: 640px;
+}
+#benone p {
+padding:0 0 0 70px;
+background-image:url('files/benone00.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:1.8;
+width: 640px;
+}
+#bentwo p {
+padding:0 0 0 70px;
+background-image:url('files/bbentwo0.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:2.9;
+width: 640px;
+}
+#benthree p {
+padding:0 0 0 70px;
+background-image:url('files/bbenthre.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:1.8;
+width: 640px;
+}
+#benpop p {
+padding:0 0 0 45px;
+background-image:url('img/popben.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:1;
+width: 640px; }
+#one {
+font-size: 19px;
+padding-left:40px;
+}
+#block {
+margin:20px 0 0px -60px }
+#red {
+color: #000000;
+} #benquest p {
+padding:7px 0 0 55px;
+background-image:url('img/help0000.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:1.3;
+width: 640px; }
+#benya p {
+padding:7px 0 0 60px;
+background-image:url('img/minibengalka.png'); background-repeat:no-repeat; background-position: 12px center;
+line-height:1.1;
+width: 640px; }
+#priceblock {
+width:351px;
+height:144px;
+border: 0px solid;
+background-image:url("img/priceb.png");
+text-align:center;
+padding-top: 65px;
+}
+#priceblock h1 {
+color:#55971a;
+}
+#pic {
+margin: -15px; }
+#pricepinkclassic {
+width:351px;
+height:144px;
+border: 0px solid;
+background-image:url("img/pinkkkprice.png");
+text-align:center;
+padding-top: 65px;
+}
+#pricepinkclassic h1 {
+color:#55971a;
+}
+#pic {
+margin: -15px; }
+#pricebluepro {
+width:351px;
+height:144px;
+border: 0px solid;
+background-image:url("img/priceb.png");
+text-align:center;
+padding-top: 65px;
+}
+#pricebluepro h1 {
+color:#55971a;
+}
+#pic {
+margin: -15px; }
+#pricepinkcpro {
+width:351px;
+height:144px;
+border: 0px solid;
+background-image:url("img/pinkkkprice.png");
+text-align:center;
+padding-top: 65px;
+}
+#pricepinkcpro h1 {
+color:#55971a;
+}
+#pic {
+margin: -15px; }
+#blh {
+color: #000000;
+font-size: 30px;
+text-align: center;
+}
+#guarantext50{
+margin: 0 0 0 25px ; }
+#guarantimgs {
+float: left;
+margin: -145px 0 0 0;
+}
+#guarantextfirst{
+margin: -66px 0 0 25px ; }
+#guarantextsecond{
+margin: -15px 0 0 25px ; }
+.buy2{
+background-color: #F7F7F7;
+border: 1px solid #E0E0E0;
+position: relative;
+width: 720px;
+line-height: 20px;
+}
+.buy3
+{
+color: #cc0000;
+font-size: 15px;
+}
+  </style>
+<link type="text/css" href="./index_files/app.css" rel="stylesheet"><link type="text/css" href="./index_files/55785.css" rel="stylesheet"><link type="text/css" href="./index_files/55785(1).css" rel="stylesheet"></head>
+
+
+<body>
+
+<div id="main">
+<p align="center"><font face="Georgia" style="font-size: 20pt" color="#0000FF">
+Клиенты за 24 часа</font></p>
+<p align="center">
+<img border="0" src="book-kak-polychit-ochered-za-24-chasa.png" width="363" height="481"></p>
+<p align="center"><span style="letter-spacing: normal" lang="ru">
+<font color="#FF0000" style="font-size: 16pt">
+<span style="font-family: Georgia; text-decoration: none">О книге:</span></font></span></p>
+<p align="left">
+<span style="font-family: Georgia; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">
+<font style="font-size: 13pt">Название</font><font style="font-size: 13pt">:</font></span><font style="font-size: 13pt"><span class="Apple-converted-space"><span style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none">&nbsp;</span></span><font color="#0000FF"><span style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none">Клиенты 
+за 24 часа</span></font><br style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+</font>
+<span style="font-family: Georgia; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">
+<font style="font-size: 13pt">Язык</font></span><font style="font-size: 13pt"><span style="font-family: Georgia; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">:</span><span style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+<span lang="ru"><font color="#0000FF">Р</font></span><font color="#0000FF">усский</font></span></font><font color="#0000FF"></font></p>
+<p align="center"><span style="letter-spacing: normal" lang="ru">
+<span style="font-family: Georgia; text-decoration: none">
+<font color="#FF0000" style="font-size: 16pt">Аннотация</font></span><span style="font-family: Georgia"><font color="#FF0000" style="font-size: 16pt">:</font></span></span><span style="font-family: Georgia"><font color="#FF0000" style="font-size: 16pt"><span style="letter-spacing: normal">
+</span></font></span></p>
+<p style="font-family: Georgia; font-size: 13pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 9px">
+<span lang="ru">Книга, которая научит Вас делать для себя любых клиентов, 
+которых Вы только пожалаете.</span></p>
+<p align="center" style="color: #FF0000; font-family: Georgia; font-size: 15pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+<span lang="ru">Какова цена книги?</span></p>
+<p align="center" style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+<font style="font-size: 15pt">Цена</font><font style="font-size: 15pt">, я 
+считаю, доступная каждому, <font color="#0000FF">всего <span lang="ru">60</span>0 рублей.</font></font></p>
+<p align="center" style="font-family: Georgia; font-size: 13pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+<a target="_blank" href="http://glopart.ru/buy/48253">
+<img border="0" src="1.jpg" width="510" height="96"></a></p>
+<p align="center" style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+<font size="2">Внимание! Версия книги электронная(pdf), после оплаты, ссылка на 
+скачивание книги будет отправлена Вам на почту моментально.</font></p>
+<hr style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 16px;">
+<p align="center" style="color: rgb(0, 0, 0); font-family: Arial, Tahoma, sans-serif; font-size: 32px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<span style="font-size: 12pt; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255);">
+Copyright © 2020. Ваше Имя. Все права защищены. Использование текстов и 
+изображений с данной страницы без письменного разрешения<span class="Apple-converted-space">&nbsp;</span><span lang="ru">з</span>апрещено.</span></p>
+<p align="center" style="color: rgb(0, 0, 0); font-family: Arial, Tahoma, sans-serif; font-size: 32px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<span lang="ru" style="font-family: 'Times New Roman'; font-size: 12pt; letter-spacing: normal; background-color: rgb(255, 255, 255);">
+&nbsp;<a target="_blank" href="http://glopart.ru/public/48253">Партнерская программ</a></span><a target="_blank" href="http://glopart.ru/public/48253"><span style="font-family: 'Times New Roman'; font-size: 12pt; letter-spacing: normal; background-color: rgb(255, 255, 255);">а</span></a></p>
+<p align="center" style="font-family: Georgia; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+<span style="font-family: Times New Roman; font-weight: 400; font-size: 16px; background-color: #FFFFFF">
+<a href="mailto:kkniga900@gmail.com">kkniga900@gmail.com</a></span></div>
+</body></html>
